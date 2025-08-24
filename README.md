@@ -1,6 +1,7 @@
 # LevelBot
 
 LevelBot is a Python project designed to fetch flight prices from the FlyLevel API and send notifications via Telegram when prices drop below a specified threshold. This project utilizes GitHub Actions to run the script on a schedule.
+<img width="485" height="144" alt="image" src="https://github.com/user-attachments/assets/76ea6554-1fd8-4a7e-a56d-45bad22eda55" />
 
 ## Project Structure
 
