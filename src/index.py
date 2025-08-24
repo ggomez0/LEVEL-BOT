@@ -1,5 +1,9 @@
 import requests
 import json
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 def get_request(url):
     headers = {
@@ -25,9 +29,9 @@ def main():
         {'months': ['01', '03', '05'], 'year': '2026'}
     ]
     all_day_prices = []
-    min_price = 200  # Cambia este valor según tu necesidad
-    telegram_token = '7943911731:AAFl3bTSxzcIJWoEcAksPsPnHvGG0mZnTYM'
-    telegram_chat_id = '6716002853'
+    min_price = 600 # Precio mínimo para enviar notificación
+    telegram_token = os.getenv('telegram_token')
+    telegram_chat_id = os.getenv('telegram_chat_id')
 
     for year_data in months_data:
         for month in year_data['months']:
